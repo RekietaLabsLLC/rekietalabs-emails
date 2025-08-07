@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RekietaLabs Email Hub</title>
+  <link rel="icon" href="IMG_0926.jpeg" type="image/jpeg" />
+  <style>
+    :root {
+      --brand-color: #1753aa;
+      --background-color: #0d0d0d;
+      --text-color: #f4f4f4;
+      --link-color: #61a8ff;
+      --container-bg: #1a1a1a;
+      --border-radius: 12px;
+      --max-width: 900px;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header {
+      max-width: var(--max-width);
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      color: var(--brand-color);
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p.lead {
+      font-size: 1.25rem;
+      color: #c0c0c0;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: var(--max-width);
+      width: 100%;
+      background-color: var(--container-bg);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: 0 0 20px rgba(23, 83, 170, 0.3);
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      background-color: var(--brand-color);
+      color: var(--text-color);
+      padding: 1rem 2.5rem;
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      min-width: 220px;
+    }
+
+    .nav-links a:hover {
+      background-color: #0f3d82;
+    }
+
+    section.faq {
+      text-align: left;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section.faq h2 {
+      color: var(--brand-color);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    section.faq details {
+      background: #222;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      box-shadow: inset 0 0 10px rgba(23, 83, 170, 0.2);
+    }
+
+    section.faq details summary {
+      font-weight: 600;
+      font-size: 1.1rem;
+      outline: none;
+      user-select: none;
+    }
+
+    section.faq details p {
+      margin-top: 0.5rem;
+      color: #ccc;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+      max-width: var(--max-width);
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the RekietaLabs Email Hub</h1>
+    <p class="lead">
+      Manage your subscription preferences with ease. Whether you want to receive the latest news, updates, or decide to unsubscribe, everything is handled securely and transparently here.
+    </p>
+  </header>
+
+  <main>
+    <nav class="nav-links" aria-label="Subscription navigation">
+      <a href="https://subscribe.rekietalabs.com" title="Subscribe to RekietaLabs newsletter">Subscribe to Newsletter</a>
+      <a href="https://unsubscribe.rekietalabs.com" title="Unsubscribe from RekietaLabs newsletter">Unsubscribe from Newsletter</a>
+    </nav>
+
+    <section class="faq" aria-label="Frequently Asked Questions">
+      <h2>Frequently Asked Questions</h2>
+
+      <details>
+        <summary>How do I subscribe to the newsletter?</summary>
+        <p>Click the Subscribe button above, enter your email address, and confirm. You'll start receiving the latest news and updates from RekietaLabs.</p>
+      </details>
+
+      <details>
+        <summary>How can I unsubscribe?</summary>
+        <p>Use the Unsubscribe button above to remove your email from our mailing list at any time. We respect your privacy and will process your request promptly.</p>
+      </details>
+
+      <details>
+        <summary>Will I receive any spam?</summary>
+        <p>Absolutely not. RekietaLabs only sends relevant, important information. You can unsubscribe anytime if you prefer.</p>
+      </details>
+
+      <details>
+        <summary>Can I change my email preferences?</summary>
+        <p>Currently, you can subscribe or unsubscribe. We plan to add more granular controls in the future.</p>
+      </details>
+
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 RekietaLabs. All rights reserved.
+  </footer>
+</body>
+</html>
